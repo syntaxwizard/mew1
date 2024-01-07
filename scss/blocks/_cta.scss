@@ -1,0 +1,55 @@
+.cta {
+padding: 180px 0;
+padding-left: 40px;
+
+background-image: url('./../img/cta/rectangel.jpg');
+
+@include mediaTablet {
+	padding: 60px 0;
+}
+
+	// .cta__title
+
+	&__title {
+	margin-bottom: 17px;
+	}
+
+	// .cta__wrapper
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 30px;
+
+		@include mediaTablet {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	// .cta__text
+
+	&__text {
+		line-height: 1.5;
+
+		p + p {
+			margin-top: 1em;
+		}
+
+		@include mediaTablet {
+			font-size: 14px;
+		}
+	}
+
+	 .cta__form {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 35px 30px;
+
+		@include mediaTablet {
+			grid-template-columns: 1fr;
+		}
+	 }
+
+	//&__form {
+   //
+}
